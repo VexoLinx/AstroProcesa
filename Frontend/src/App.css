@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Jura:wght@400;500;700&family=Quantico:wght@400;700&display=swap');
+
+
+:root {
+    /* Ajustables */
+    --bg: #000;
+    /* color fondo */
+    --dot-color: 255, 255, 255;
+    /* color puntos en RGB */
+    --dot-opacity: 0.1;
+    /* opacidad (0 a 1) */
+    --dot-size: 0.8px;
+    /* tamaño del punto */
+    --h-spacing: 14px;
+    /* separación horizontal entre puntos */
+    --v-spacing: 14px;
+    /* separación vertical entre filas */
+}
+
+.terminal-dots {
+    background-color: var(--bg);
+
+    background-image:
+        radial-gradient(circle at 1px calc(var(--v-spacing) / 2),
+            rgba(var(--dot-color), var(--dot-opacity)) 0,
+            rgba(var(--dot-color), var(--dot-opacity)) calc(var(--dot-size)),
+            transparent calc(var(--dot-size)));
+    background-size: var(--h-spacing) var(--v-spacing);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('./fonts/eurostile-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    font-family: "Eurostile", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+}
+

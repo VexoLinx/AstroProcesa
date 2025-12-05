@@ -1,0 +1,74 @@
+.asaidContainer {
+  width: 300px;
+  border-right: 1px solid #dee2e6;
+  height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.cabezeraAsaid p {
+  margin: 0px;
+}
+
+.asideTitle {
+  background-color: #454858e9;
+  padding: 2px 5px;
+}
+
+.textoCapacidad {
+  text-align: center;
+}
+
+.perfilEstacion {
+  color: chocolate;
+  font-weight: bold;
+}
+
+.listaMateriales {
+  max-height: 120px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.listaMateriales ul {
+  list-style-type: none;
+}
+
+.listaMateriales::-webkit-scrollbar {
+  width: 4px;
+}
+
+.listaMateriales::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+.listaMateriales::-webkit-scrollbar-thumb {
+  background: #ffffffcd;
+  border-radius: 4px;
+  min-height: 30px;
+}
+
+.listaMateriales::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.tituloLista {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 75px;
+  background-color: #45485891;
+  padding: 2px 5px;
+  margin-top: 4px;
+}
+
+.tituloLista p {
+  margin: 0px;
+}
+
+div img {
+  width: 20px;
+  height: 20px;
+}
