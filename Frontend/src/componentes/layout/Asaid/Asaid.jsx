@@ -16,10 +16,13 @@ function Asaid() {
           </div>
           <div className="listaMateriales">
             <ul>
-              <li>
-                <div>
+              <li className="rowLista">
+                <div className="imgNombreMaterial">
                   <img src={lingote} alt="" />
                   <p>Hierro (Mineral)</p>
+                </div>
+                <div>
+                  <p>+8%</p>
                 </div>
               </li>
               <li>Material 2</li>
