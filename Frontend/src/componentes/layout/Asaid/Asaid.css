@@ -1,10 +1,10 @@
 .asaidContainer {
-  width: 300px;
-  border-right: 1px solid #dee2e6;
-  height: 80vh;
+  width: 22%;
+  min-height: 80vh;
   padding: 10px;
   box-sizing: border-box;
   font-size: 14px;
+  position: relative;
 }
 
 .cabezeraAsaid p {
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.perfilEstacion {
+.perfil {
   color: chocolate;
   font-weight: bold;
 }
@@ -81,6 +81,7 @@ div img {
   align-items: center;
   justify-content: space-between;
   padding-right: 15%;
+  height: 1.5rem;
 }
 
 .imgNombreMaterial {
@@ -89,4 +90,171 @@ div img {
   align-items: center;
   gap: 10%;
   text-wrap: nowrap;
+}
+
+.porcentajeCapacidad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.porcentajeCapacidad p {
+  margin: 0px;
+}
+
+.valorCapacidad {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+.spectrum {
+  display: block;
+  overflow: hidden;
+}
+
+.spectrum svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.extremos {
+  border: none;
+  height: 2px;
+  background: #45485896;
+  position: relative;
+}
+
+.extremos::before,
+.extremos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #8f8f8f;
+}
+
+.extremos::before {
+  left: 0;
+  width: 4%;
+}
+
+.extremos::after {
+  right: 0;
+  width: 1%;
+}
+
+.line.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 98%;
+  background: #45485896;
+}
+
+.line.top::before,
+.line.top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #8f8f8f;
+}
+
+.line.top::before {
+  left: 0;
+  width: 4%;
+}
+
+.line.top::after {
+  right: 0;
+  width: 1%;
+}
+
+
+.line.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 98%;
+  background: #45485896;
+}
+
+.line.bottom::before,
+.line.bottom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #8f8f8f;
+}
+
+.line.bottom::before {
+  left: 0;
+  width: 4%;
+}
+
+.line.bottom::after {
+  right: 0;
+  width: 1%;
+}
+
+
+.line.right {
+  position: absolute;
+  top: 3%;
+  right: 0;
+  width: 2px;
+  height: 95%;
+  background: #45485896;
+}
+
+.line.right::before,
+.line.right::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #8f8f8f;
+}
+
+.line.right::before {
+  top: 0;
+  height: 4%;
+}
+
+.line.right::after {
+  bottom: 0;
+  height: 1%;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 6% 5%;
+}
+
+.btn-configurar {
+  padding: 10px 24px;
+  background: rgb(118 134 62);
+  border: 3px solid rgb(154 185 79);
+  border-radius: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Eurostile", sans-serif;
+}
+
+.btn-configurar:hover {
+  background: rgb(154 185 79);
+  border: 3px solid rgb(195, 235, 102);
+  cursor: pointer;
 }
