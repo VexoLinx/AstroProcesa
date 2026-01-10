@@ -1,0 +1,65 @@
+.dropdown {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.dropdown-toggle {
+  font-family: "Eurostile", sans-serif;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: #000000;
+  color: rgba(255, 255, 255, 0.856);
+  border: 2px solid #ff8c1ad1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Texto */
+.dropdown-toggle .text {
+  font-size: 14px;
+}
+
+/* Flecha */
+.arrow {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+/* Abierto */
+.dropdown.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 99%;
+  z-index: 1000;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: #000000;
+  border: 2px solid #ff8c1ad1;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Opciones */
+.dropdown-menu li {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.856);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+}

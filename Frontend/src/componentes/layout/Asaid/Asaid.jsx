@@ -1,44 +1,44 @@
 import "./Asaid.css";
-import lingote from "../../../assets/lingote-de-plata.png";
+import ListaMateriales from "../ListaMateriales/ListaMateriales";
+import SVG from "../SVG/SVG";
+import Hr from "../../Hr/Hr";
 
 function Asaid() {
   return (
     <>
       <aside>
         <div className="asaidContainer">
+          <span className="line top"></span>
+          <span className="line right"></span>
+          <span className="line bottom"></span>
+
           <div className="cabezeraAsaid">
-            <p className="perfilEstacion">ESTACIÓN - PERFIL</p>
+            <p className="perfil">ESTACIÓN - PERFIL</p>
             <p className="asideTitle">// ESPECIALIZACIONES DE MATERIALES</p>
           </div>
           <div className="tituloLista">
             <p>MATERIAL</p>
             <p>PRODUCCIÓN</p>
           </div>
-          <div className="listaMateriales">
-            <ul>
-              <li className="rowLista">
-                <div className="imgNombreMaterial">
-                  <img src={lingote} alt="" />
-                  <p>Hierro (Mineral)</p>
-                </div>
-                <div>
-                  <p>+8%</p>
-                </div>
-              </li>
-              <li>Material 2</li>
-              <li>Material 3</li>
-              <li>Material 4</li>
-              <li>Material 5</li>
-              <li>Material 6</li>
-              <li>Material 7</li>
-              <li>Material 8</li>
-              <li>Material 9</li>
-              <li>Material 10</li>
-            </ul>
-          </div>
+          <ListaMateriales />
+          <hr className="extremos" />
           <div className="capacidadRefineria">
             <p className="asideTitle">// CAPACIADAD DE REFINERIA</p>
             <p className="textoCapacidad">LA REFINERIA TIENE ACTUALMENTE UNA CARGA DE TRABAJO EXTREMA, SE AGREGARA UN GRAN RECARGO.</p>
+          </div>
+          <Hr />
+          <div className="porcentajeCapacidad">
+            <p>CAPACIDAD ACTUAL</p>
+            <p className="valorCapacidad">115273%</p>
+          </div>
+          <SVG />
+          <Hr />
+          <div className="cabezeraAsaid">
+            <p className="perfil">USUARIO - DETALLES</p>
+            <p className="asideTitle">// SELECCIÓN DE MATERIALES</p>
+          </div>
+          <div className="btnContainer">
+            <button className="btn-configurar"> CONFIGURAR ORDEN DE REFINADO</button>
           </div>
         </div>
       </aside>
